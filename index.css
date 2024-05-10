@@ -1,0 +1,204 @@
+@font-face {
+  font-family: "Comic_CAT";
+  src: url(Comic_CAT.otf);
+}
+
+@font-face {
+  font-family: "Daray";
+  src: url(Daray.otf);
+}
+
+@font-face {
+  font-family: "Durik";
+  src: url(ДУРИК.ttf);
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url("фон.png");
+}
+
+.content {
+  min-height: calc(100vh - 70px - 64px);
+}
+
+.teal {
+  background-color: #a5ab8b !important;
+  box-shadow: none;
+}
+
+.teal a {
+  color: #000;
+  font-family: "comic_cat";
+}
+
+.page-footer {
+  padding-top: 0;
+  margin: 10px 0 10px 0;
+  background-color: #a5ab8b;
+  font-family: "Comic_CAT";
+}
+
+.page-footer .container,
+.page-footer a {
+  color: #000 !important;
+}
+
+.page-footer a {
+  font-size: 180%;
+}
+
+.page-footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-footer p {
+  text-align: center;
+}
+
+.preloader-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 70px auto;
+}
+
+.input-field input[type=search] {
+  font-family: "Comic_CAT";
+  border-bottom: 1px solid #a5ab8b;
+}
+
+.input-field ::placeholder {
+  color: #000;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  font-family: "Durik";
+}
+
+.card-content .card-title {
+  font-size: 20px;
+  color: #000;
+}
+
+.card-content p {
+  font-size: 15px;
+  color: #000;
+}
+
+.card-content {
+  flex-grow: 1;
+}
+
+
+.card .card-action {
+  background-color: transparent;
+  border-top: 1px solid rgba(160, 160, 160, 0.2);
+  position: absolute !important;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  align-content: center;
+  padding: 0 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-action .btn {
+  text-align: center;
+  padding: 60% 0 0 0;
+  background-color: transparent;
+  color: transparent;
+  width: 100%;
+  height: 100%;
+}
+
+.card .card-action .btn:hover {
+  background-color: #fff !important;
+  color: #a5ab8b;
+  border: 5px solid #a5ab8b;
+  font-size: 23px;
+}
+
+img,
+iframe {
+  max-width: 100%;
+}
+
+iframe {
+  width: 600px;
+  height: 350px;
+}
+
+.recipe {
+  font-family: "Durik";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5% 0 0 0;
+}
+
+.recipe h5{
+  text-align: center;
+}
+
+.recipe table{
+  background-color: #dbdfcb;
+}
+
+.content .cont{
+  min-height: calc(100vh - 70px - 64px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.recipe .btnrec, .categoriya .btncat{
+  margin: 5% 0;
+  padding: 2% 0;
+  width: 100%;
+  background-color: #a5ab8b;
+  color: #000;
+  font-family: "Durik";
+  font-size: 1.5rem;
+  box-shadow: none;
+  border: 0;
+  border-radius: 0.9rem;
+}
+
+.recipe .btnrec:hover, .categoriya .btncat:hover{
+  background-color: #000 !important;
+  color: #dbdfcb;
+  box-shadow: none;
+}
+
+.contactUs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: "Comic_CAT";
+  background-color: #dbdfcb;
+  border-radius: 2rem;
+}
+
+.contactUs h4 {
+  color: #a5ab8b;
+}
